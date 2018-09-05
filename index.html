@@ -382,35 +382,15 @@
                         </div>
                         <div class="w3-container" style="overflow-y:scroll; position: relative; height:200px">
                             <p>
-                            The project involves creating an ETL pipeline through which data is passed to Docker
-                            through web application, CSV upload or MySQL scripts, where encryption and anonymity
-                            are taken care of and data is ingested in MySQL database. From MySQL database the data
-                            is passed to R and PySpark Algorithms. A second ETL is created which involves ingesting
-                            the output data from algorithms to Druid. The whole flow is orchestrated using Apache
-                            Airflow. The data from druid is then displayed on a web application written in Play
-                            Framework. Various charts are created using Apache Superset which is tightly integrated
-                            with Druid and is displayed on web application. My role in this project is to develop an end to
-                            end flow of the project. I have worked over writing partner specific ETL pipeline in Scala and
-                            Spark which involves ingesting the data, anonymizing and transforming it and store it in
-                            MySQL database. I have also worked on creating a Docker with distributed containers that
-                            have scalable master slave architecture (increase or decrease in number of slave nodes
-                            without rebuilding the Docker image). I have added Hadoop, Apache Spark, MySQL, Apache
-                            Airflow, R, Python, Java, Scala and Zeppelin Notebook in the docker. The data is passed to
-                            various R and PySpark based machine learning data analysis algorithms and output is
-                            written in form of CSV. The whole system is deployed in above created docker and
-                            orchestrated through Apache Airflow. I was responsible for developing a Docker with Druid,
-                            Superset, Zookeeper, Java, Python installed and deploying it on AWS EC2 machine. I have
-                            written a micro service in Play Framework which acts as a middle-ware between UI and
-                            Apache Airflow and involves in functionalities such as triggering the direct acyclic graph of
-                            jobs, collecting the data from UI, passing the data to the DAG, checking status of DAG
-                            whether it is running, success or failed by making a call to Airflow MySQL meta-database
-                            and if successful taking the output from dag and passing it to UI. I have worked on the
-                            second ETL written in scala and spark, which involves transforming the data to make it able
-                            to ingest to druid. Besides working over the core development, I was also responsible for
-                            designing and creating the environment for deploying the application on AWS EC2 instances
-                            and working on AWS VPC,
-                            S3 and RDS while also adding the functionality of continuous integration using Jenkins and
-                            automating the deployment process with the help of Salt-Stack.</p>
+                               <li> Related to Healthcare domain in a 3-member team. </li>
+                               <li>Worked on creating Application Docker with Java, Python, Scala, Hadoop, Spark, Airflow, and Zeppelin.</li>
+                               <li>Responsible for creating and deploying Database Docker with Druid and Superset installed.</li>
+                               <li>Contributed towards designing and developing ETLs in Spark and Scala.</li>
+                               <li>Contributed towards optimizing the data algorithm to work for large data and in distributed mode in PySpark.</li>
+                               <li>Responsible for creating and maintaining client environment which includes AWS, Dockers, Jenkins and SaltStack.</li>
+                               <li>Responsible for orchestrating the whole flow using Apache Airflow.</li>
+                               <li>Developed a micro service in Play Framework which acts as middleware between UI and Airflow.</li>
+                            </p>
                         </div>
                         <footer class="w3-container" style="background-color: #11ABB0; overflow-y: scroll; position: relative; height:100px">
                             <h5><i> </i><b>Platform and Technologies</b>​- Python, Scala, Play Framework, Apache Hadoop,
@@ -424,18 +404,10 @@ Jenkins, AWS, SBT, Front End Technologies</h5>
                         </div>
                         <div class="w3-container" style="overflow-y: scroll; position: relative; height:200px">
                             <p>
-                        The project started with creating a knowledge base by crawling the data using Apache Nutch
-                        web crawler. This involved writing an HtmlParseFilter plugin in which the useful data was
-                        extracted with the help of regular expressions and saving the data to a file. Then, the data
-                        was cleaned using Python Scripts and output was generated in form of a CSV and multiple
-                        Jsons, in which a separate Json was generated for each row of CSV. The CSV is used to
-                        insert the data in Neo4J while the Jsons were used for inserting the data to Elasticsearch. In
-                        case of the Recommendation System, when the user enters the query in the search box, the
-                        UI made a GET call to the end point exposed by the middleware and also passed user query
-                        as a query parameter. This triggered a function that made a query to the elastic search and
-                        passed the required response to the UI. For Chat-Bot, hierarchical Jsons were generated
-                        from Neo4J and passed to API.AI in order to train the chat-bot. The whole system was then
-                        deployed on AWS. 
+                        <li>Related to Retail domain in a 4-member team.</li>
+                        <li>Worked on creating the knowledge base by crawling web data using Apache Nutch. This involved writing an HtmlParseFilter plugin in which the useful data was extracted with the help of regular expressions. </li> 
+                        <li> Written Python and Pandas scripts to clean the data and generate required csv and Jsons out of it. </li>
+                        <li>Written REST service in Play Framework to ingest data in Neo4J and query elastic search.</li>
                             </p>
                         </div>
                         <footer class="w3-container" style="background-color: #11ABB0; overflow-y: scroll; position: relative; height:100px">
@@ -479,13 +451,10 @@ Framework, Elasticsearch, API.AI, AWS, ANT, SBT, Maven, Front End Technologies.<
                         </div>
                         <div class="w3-container" style="overflow-y:scroll; position: relative; height:200px">
                             <p>
-                        Worked on a project that involved taking multiple documents and query as input and
-                        pre-processing both document and query by performing stemming and stopword removal
-                        with the help of Stanford CoreNLP library. The documents were broken into sentences and
-                        query was expanded by generating synset with the help of WordNet library. Multiple
-                        documents and queries were represented as vectors in vector space model. The cosine
-                        similarity of each sentence with the query was calculated and on the basis of calculation, the
-                        more similar sentences were selected and the summary was generated as output.</p>
+                       <li> This project involves taking documents and query as input and generating summary related to the query as an output.</li>
+                        <li>NLP Tasks: Pre-processing both document and query by performing stemming and stop word removal using Stanford CoreNLP library.</li> 
+                        <li>The documents were broken into sentences and query was expanded by generating synset using WordNet.</li>
+                        <li>Represented sentences and query as vectors using term frequency and calculated cosine similarity to select similar sentences.</li></p>
                         </div>
                         <footer class="w3-container" style="background-color: #11ABB0; overflow-y: scroll; position: relative; height:100px">
                             <h5><i> </i><b>Platform and Technologies</b>​- Java, Stanford CoreNLP, WordNet, Rida-WordNet, Lucene, Maven.</h5>
